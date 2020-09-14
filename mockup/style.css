@@ -1,0 +1,319 @@
+body {
+    background-color: #DBDEE1;
+}
+
+/* Det här är container för Grid för hela sidans layout */
+.container{
+    width: 1000px;
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+   
+}
+
+/* Headern i grid */
+header{
+    height: 600px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+}
+
+/* Det här är grid container för de tre grid sidorna i headern */
+.grid-container{
+    display: grid; 
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto; 
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Det här är grid nummer 1 den ljusblå delen i headern */
+.grid-one{
+    background-color: #A1CCE5;
+    grid-column: 1 / 2; 
+    grid-row: 1 / 5;
+    height: 600px;
+    width: 500px; 
+}
+
+/* Det här är bilden på familjen i headern ljusblå delen */
+#familj {
+    float: right;
+    margin-top: 47px;
+    
+}
+
+
+/* Det här är knappen som säger Join Now */
+.button-one{
+    
+    border: none;
+  color: black;
+  padding: 15px 37px;
+  text-align: center;
+  font-size: 11px;
+  margin: 70px 0px 30px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 0px darkgrey;
+  font-weight: bold;
+  float: right;
+  
+}
+
+
+/* Det här är för alla H1 i html dokumentet */
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+   
+/* Det här är för alla p:s i dokumentet */
+p {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rubrik-one{
+
+    margin: 50px;
+    padding: 50px;
+    margin-bottom: 0px;
+    padding-bottom:  0px;
+    padding-top: 9px;
+
+}
+
+.text-one {
+    padding: 50px;
+    margin: 50px;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    
+}
+
+
+
+/* Det här är nummer två griden i headern  */
+.grid-two{
+    background-color: #F78850;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 500px;
+    height: 300px;
+    
+}
+
+.text-two {
+    text-align: center;
+    margin-top: 110px;
+
+}
+
+
+.rubrik-two{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+/* Det här är nummer tre griden i headern */
+
+.grid-three{
+    background-color: #F3AF10;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 500px;
+    height: 300px;
+}
+
+.text-three{
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 0px;
+}
+
+
+.rubrik-three {
+    text-align: center;
+}
+
+
+
+
+/* Det här är menyn till sidan styling */
+
+
+nav{
+   height: 100px;
+   grid-column: 2 / 3; 
+   grid-row: 2 / 3;
+   font-size: 13px;
+}
+
+
+ul {
+    margin:0 auto;
+    width: 80%;
+    
+    }
+  
+    
+  nav ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 35px 0px 0px 240px;
+    
+    
+  }
+  
+  nav li {
+     margin-right: 95px;
+     list-style: none;
+     text-decoration: none;
+     display: inline;
+     
+  }
+  
+  nav li a {
+     text-decoration: none;
+     color: #696969;
+     font-weight: bold;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+
+a:hover{
+    color: black;
+}
+
+
+
+
+
+
+main {
+    background-color: #A9A9A9;
+    height: 500px;
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4;
+    width: 1000px;
+}
+
+
+
+.container-box {
+    display: grid; 
+    grid-template-columns: auto auto; 
+    grid-template-rows: auto auto; 
+    width: 1000px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.grid-box{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 500px;
+}
+
+
+.rubrik-fyra{
+    margin: 100px;
+    width: 400px;
+    height: 300px;
+    
+}
+
+
+
+.button-two{
+    border: none;
+    color: black;
+    padding: 15px 37px;
+    text-align: center;
+    font-size: 11px;
+    margin: 45px 0px 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 2px 0px darkgrey;
+    font-weight: bold;
+    float: left;
+}
+
+.gridbox-two{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 500px;
+}
+
+
+.text-fyra{
+    width: 500px; 
+    margin-top: 100px;
+    margin-left: 50px;
+    line-height: 20px;
+    text-align: left;
+   
+}
+
+.flex-container {
+    display: flex;
+    width: 1000px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+
+  .children {
+      margin-top: 100px;
+      width: 100px;
+      height: 300px;
+      background-color: white;
+      align-self: center;
+  }
+
+  .justright{
+      
+      width: 150px;
+      background-color: white;
+  }
+
+  .oldfart{
+      
+      width: 150px; 
+      background-color: white;
+  }
+
+  
+
+  aside{
+    background-color: #F3AF10;
+    height: 500px; 
+    grid-column: 2 / 3; 
+    grid-row: 4 / 5;
+   
+} 
+
+footer{
+    background-color: saddlebrown;
+    height: 300px; 
+    grid-column: 2 / 3;
+    grid-row: 5 / 6; 
+
+}
