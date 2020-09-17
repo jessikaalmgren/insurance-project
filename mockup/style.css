@@ -41,12 +41,12 @@ header{
 /* Det här är bilden på familjen i headern ljusblå delen */
 #familj {
     float: right;
-    margin-top: 47px;
+    margin-top: 57px;
     
 }
 
 
-/* Det här är knappen som säger Join Now */
+/* Det här är knappen som säger Join Now i headern */
 .button-one{
     
     border: none;
@@ -65,7 +65,7 @@ header{
 }
 
 
-/* Det här är för alla H1 i html dokumentet */
+/* Det här är för alla H1 i dokumentet */
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -83,6 +83,8 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+/* We´ve got you covered rubriken */
 .rubrik-one{
 
     margin: 50px;
@@ -93,6 +95,7 @@ p {
 
 }
 
+/* Texten under första rubriken i headern */
 .text-one {
     padding: 50px;
     margin: 50px;
@@ -100,6 +103,7 @@ p {
     margin-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    line-height: 20px;
     
 }
 
@@ -115,16 +119,18 @@ p {
     
 }
 
+/* Rubriken learn more */
+.rubrik-two{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+/* Texten what do we have to offer */
 .text-two {
     text-align: center;
     margin-top: 110px;
 
-}
-
-
-.rubrik-two{
-    text-align: center;
-    margin-bottom: 100px;
 }
 
 
@@ -141,13 +147,14 @@ p {
     height: 300px;
 }
 
+/* Det här är texten what are you waiting for */
 .text-three{
     text-align: center;
     margin-top: 125px;
     margin-bottom: 0px;
 }
 
-
+/* Det här är rubriken join today */
 .rubrik-three {
     text-align: center;
 }
@@ -156,10 +163,8 @@ p {
 
 
 /* Det här är menyn till sidan styling */
-
-
 nav{
-   height: 100px;
+   height: 80px;
    grid-column: 2 / 3; 
    grid-row: 2 / 3;
    font-size: 13px;
@@ -205,17 +210,17 @@ a:hover{
 
 
 
-
+/* Det här griden till main sidan  */
 main {
     background-color: #A9A9A9;
-    height: 500px;
+    height: 600px;
     grid-column: 2 / 3; 
     grid-row: 3 / 4;
     width: 1000px;
 }
 
 
-
+/* Det här är grid boxen till innehållet i main elementet */
 .container-box {
     display: grid; 
     grid-template-columns: auto auto; 
@@ -224,6 +229,8 @@ main {
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+/* Första grid boxen */
 .grid-box{
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -239,7 +246,7 @@ main {
 }
 
 
-
+/* Knapp nummer två i gridboxen */
 .button-two{
     border: none;
     color: black;
@@ -255,6 +262,7 @@ main {
     float: left;
 }
 
+/* Andra grid boxen */
 .gridbox-two{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -276,44 +284,267 @@ main {
     width: 1000px;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    margin-top: 1125px;
+    
+    
     
   }
 
   .children {
-      margin-top: 100px;
-      width: 100px;
-      height: 300px;
+      width: 280px;
+      height: 350px;
       background-color: white;
       align-self: center;
+      margin: 10px;
+      border-radius: 6px;
+      
   }
 
   .justright{
-      
-      width: 150px;
+      height: 350px;
+      width: 280px;
       background-color: white;
+      margin: 10px;
+      border-radius: 6px;
   }
 
   .oldfart{
-      
-      width: 150px; 
+    height: 350px;
+      width: 280px; 
       background-color: white;
+      margin: 10px;
+      border-radius: 6px;
   }
 
   
+  .flex-color {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    position: absolute;
+    margin-bottom: 40%;
+    
+  }
+
+  .blue {
+    width: 250px;
+    height: 150px;
+    background-color: #A1CCE5;
+    align-self: center;
+    margin-left: 75px;
+    border-radius: 4px;
+    overflow: hidden;
+    
+    
+}
+
+.orange {
+    width: 250px;
+    height: 150px;
+    background-color: orange;
+    align-self: center;
+    border-radius: 4px;
+    margin-left: 50px;
+    overflow: hidden;
+    
+}
+
+
+.red {
+    width: 250px;
+    height: 150px;
+    background-color: #F78850;
+    align-self: right;
+    margin: 10px;
+    border-radius: 4px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+#img-child{
+    padding: 20px;
+    padding-left: 85px;
+    
+}
+
+
+#img-adult{
+    padding: 20px;
+    padding-left: 75px;
+}
+
+#img-oldfart{
+    padding: 20px;
+    padding-left: 70px;
+
+}
+
+
+h2{
+    font-size: 22px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h2-style{
+    position: relative; 
+    top: 130px;
+    text-align: center;
+}
+
+.children-text{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    position: relative;
+    left: 3px;
+    right: 3px;
+    color: #BCB8B8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
 
   aside{
     background-color: #F3AF10;
-    height: 500px; 
+    height: 780px; 
     grid-column: 2 / 3; 
     grid-row: 4 / 5;
+    width: 1000px;
    
 } 
 
-footer{
-    background-color: saddlebrown;
-    height: 300px; 
-    grid-column: 2 / 3;
-    grid-row: 5 / 6; 
+.rubrik-fem{
+    text-align: center;
+    margin-top: 290px;
+}
 
+.text-fem{
+    text-align: center;
+    padding: 40px;
+    line-height: 20px;
+    color: #656565;
+}
+
+section{
+    height: 600px; 
+    grid-column: 2 / 3; 
+    grid-row: 5 / 6;
+}
+
+.flex-how{
+    display: flex;
+    width: 1000px;
+    flex-direction: row;
+    align-self: center;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+.text-inside{
+    text-align: center;
+    margin-top: 99px;
+}
+
+.one{
+    height: 300px; 
+    width: 333px;
+    background-color: #A1CCE5;
+    text-align: center;
+
+}
+
+.two{
+    height: 300px; 
+    width: 333px; 
+    background-color: white;
+}
+
+.three{
+    height: 300px;
+    width: 333px; 
+    background-color: #DBDEE1;
+}
+
+
+.four{
+    height: 300px; 
+    width: 333px; 
+    background-color: white;
+}
+
+.five{
+    height: 300px; 
+    width: 333px; 
+    background-color:#F78850;
+}
+
+.six{
+    height: 300px; 
+    width: 333px; 
+    background-color: white;
+}
+
+
+.number-flex{
+    font-size: 30px;
+    margin: 30px;
+    color: #918D8D;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.works-text{
+    text-align: center;
+    padding-top: 40px;
+    line-height: 20px;
+    
+}
+
+footer{
+    background-color: #716D6D;
+    height: 400px; 
+    grid-column: 2 / 3;
+    grid-row: 6 / 7; 
+    width: 1000px;
+}
+
+.delfooter{
+    width: 980px;
+    height: 60px;
+    background-color:#A9A9A9;
+    text-align: center;
+    font-weight: bold;
+    padding:10px;
+    
+}
+
+.text-footer{
+    font-size: 15px;
+    color: #494747;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header2{
+    background-color: #A1CCE5;
+    width: 100%;
+    height: 500px; 
+}
+
+.contact-meny{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.body2{
+    background-color: white;
 }
